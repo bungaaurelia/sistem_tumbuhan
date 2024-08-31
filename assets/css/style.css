@@ -1,0 +1,74 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.main-content {
+    margin-left: 250px; /* Offset by sidebar width */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 250px); /* Ensure content area takes remaining width */
+    background-color: #f9f9f9;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.card {
+    width: 80vw; /* Make the card wider (80% of the viewport width) */
+    max-width: 800px; /* Set a maximum width to avoid too large sizes */
+    height: 80vh; /* Fixed height for the card */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0; /* Add top and bottom margins */
+}
+
+.card-image-container {
+    width: 100%;
+    height: 50%; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ddd; /* Fallback color if image fails to load */
+}
+
+.card-image {
+    width: auto; /* Allow the width to be adjusted */
+    height: 100%; /* Make the image fill the container height */
+    max-width: 100%; /* Ensure the image does not exceed container width */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.card-content {
+    padding: 20px; /* Increased padding for better spacing */
+    flex: 1; /* Allow content area to grow and fill remaining space */
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+.card-title {
+    font-size: 28px; /* Larger font size for wider card */
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 20px; /* Larger font size for better readability */
+    color: #777;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.card-description {
+    font-size: 18px; /* Larger font size to match wider card */
+    color: #555;
+}

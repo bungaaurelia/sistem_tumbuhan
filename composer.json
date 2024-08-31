@@ -1,0 +1,7 @@
+{
+    "require": {
+        "fragotesac/phpqrcode": "^1.0",
+        "phpoffice/phpspreadsheet": "^2.2",
+        "mpdf/mpdf": "^8.2"
+    }
+}

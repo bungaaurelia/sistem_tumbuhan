@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjust height as needed */
+    background-color: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it is above other content */
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 180px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    color: #ecf0f1;
+    margin: 0; /* Remove default margins */
+    padding-top: 50px; /* Add space from the top */
+    padding-bottom: 20px; /* Space below the title */
+    font-size: 24px; /* Adjust font size if needed */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure the list takes full width of the sidebar */
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+#sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar ul li a:hover {
+    background-color: #1abc9c;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+    color: #bdc3c7;
+    transition: color 0.3s ease;
+}
+
+#sidebar ul li a:hover i {
+    color: #ffffff;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 180px); /* Ensures footer doesn't get covered by the sidebar */
+    left: 180px; /* Aligns footer with the main content */
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px; /* Menyesuaikan margin agar konten tidak tertutup sidebar */
+    padding: 20px;
+    overflow: auto; /* Agar konten tidak terpotong */
+}

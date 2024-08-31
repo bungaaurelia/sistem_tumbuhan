@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 180px;
+    padding: 20px;
+    width: calc(100% - 220px);
+    background-color: #ecf0f1;
+    min-height: 100vh;
+}
+
+.main-content h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #273d54;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #273d54;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.search-form .show-all-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745; /* Green background for show all */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 13px;
+}
+
+.search-form .show-all-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+/* Table Styles */
+
+.tumbuhan-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tumbuhan-table th, .tumbuhan-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.tumbuhan-table th {
+    background-color: #273d54;
+    color: white;
+    font-weight: 600;
+}
+
+.tumbuhan-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tumbuhan-table tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Style for the actions cell */
+.tumbuhan-table td {
+    vertical-align: middle; /* Ensure the text is vertically centered */
+}
+
+.tumbuhan-table .edit-button,
+.tumbuhan-table .delete-button,
+.tumbuhan-table .view-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Blue background for edit */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.tumbuhan-table .delete-button {
+    background-color: #dc3545; /* Red background for delete */
+}
+
+.tumbuhan-table .view-button {
+    background-color: #0ccf29; /* Red background for delete */
+}
+
+.tumbuhan-table .edit-button:hover,
+.tumbuhan-table .delete-button:hover,
+.tumbuhan-table .view-button:hover {
+    background-color: #0056b3; /* Darker blue on hover for edit */
+}
+
+.tumbuhan-table .delete-button:hover {
+    background-color: #c82333; /* Darker red on hover for delete */
+}
+
+.tumbuhan-table .view-button:hover {
+    background-color: #0ccf29; /* Darker red on hover for delete */
+}
+
+/* Ensure the buttons are aligned side by side */
+.tumbuhan-table .actions {
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+}
+
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.page-link.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.page-link:hover {
+    background-color: #e9ecef;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.download-button i {
+    margin: 0;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+
+

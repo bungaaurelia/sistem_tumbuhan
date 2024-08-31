@@ -1,0 +1,125 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.main-content {
+    margin-left: 210px;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #343a40;
+}
+
+.tumbuhan-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.plant-details {
+    flex: 2;
+}
+
+.tumbuhan-detail h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+}
+
+.tumbuhan-detail p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.tumbuhan-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 1000px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+.qr-code {
+    flex-shrink: 0;
+    text-align: left;
+    width: 200px;
+}
+
+.qr-code-image,
+.plant-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.download-container{
+    display: flex;
+    align-items: center;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-left: 900px;
+    margin-top: 40px;
+}
+
+.download-button i {
+    margin: 0;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
